@@ -1,7 +1,7 @@
 package Monster;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Monster m1 = new Monster();
         Monster m2 = new Monster();
 
@@ -13,5 +13,6 @@ public class Main {
         System.out.println(m2.getHealth());
 
         MonsterA m3 = new MonsterA();
+        MonsterB m4 = new MonsterB();
     }
 }

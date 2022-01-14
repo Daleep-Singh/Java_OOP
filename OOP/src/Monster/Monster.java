@@ -28,6 +28,7 @@ public class Monster {
     public int  getHealth(){
         return health;
     }
+    public int setHealth(int x){return this.health = x;}
     public int  getattackSpeed(){
         return attackSpeed;
     }
