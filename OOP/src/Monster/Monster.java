@@ -1,17 +1,25 @@
 package Monster;
 
 public class Monster {
+    /*
+    This class creates a generic monster.
+    Attributes: Health, attackSpeed, attackDamage.
+    Methods: MeleeAttack, rangedAttack, getHealth, setHealth, getAttackSpeed, getAttackDamage
+
+
+     */
     private int health;
     private int attackSpeed;
     private int attackDamage;
 
-    //Constructer 1, 3 args
+    //Constructor 1, 3 args
     public Monster(int health,int attackSpeed, int attackDamage){
         this.health = health;
         this.attackSpeed = attackSpeed;
         this.attackDamage = attackDamage;
     }
-    //Constructure 2, no args
+
+    //Constructor 2, no args (attributes automatically defined to default)
     public Monster(){
         this.health = 100;
         this.attackSpeed = 10;
@@ -28,11 +36,18 @@ public class Monster {
     public int  getHealth(){
         return health;
     }
-    public int setHealth(int x){return this.health = x;}
-    public int  getattackSpeed(){
+
+    public int  getAttackSpeed(){
         return attackSpeed;
     }
-    public int  getattackDamage(){
+    public int  getAttackDamage(){
         return attackDamage;
+    }
+    public void setHealth(int x){health = x;}
+    public void setAttackSpeed(int x){
+        attackSpeed = x;
+    }
+    public void setAttackDamage(int x){
+        attackDamage = x;
     }
 }

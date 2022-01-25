@@ -14,5 +14,9 @@ public class Main {
 
         MonsterA m3 = new MonsterA();
         MonsterB m4 = new MonsterB();
+
+        System.out.println(m4.getHealth());
+        m3.lightningBolt(m4);
+        System.out.println(m4.getHealth());
     }
 }
